@@ -45,12 +45,12 @@ export default function HeroSlider() {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     nextSlide();
-  //   }, 5000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
