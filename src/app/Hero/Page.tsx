@@ -32,8 +32,6 @@ const slides = [
   },
 ];
 
-
-
 const slideVariants = {
   initial: { opacity: 0 },
   animate: {
@@ -129,76 +127,19 @@ export default function HeroSlider() {
           ))}
         </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla
-        optio illum cumque incidunt deleniti harum sapiente cum. Non eveniet
-        doloremque nesciunt tenetur molestiae ea vitae, rem porro praesentium
-        vel. A praesentium inventore ut expedita tenetur velit repudiandae iure
-        minus excepturi quisquam odit error, reiciendis accusantium voluptatibus
-        et quas deserunt corrupti itaque eum debitis quos mollitia corporis.
-        Quam, expedita maxime? Voluptatibus est culpa harum id beatae provident
-        tempore molestias odit commodi aperiam. Rerum possimus, magni
-        consequuntur id, quaerat iste aliquid sequi commodi in velit quia
-        mollitia deleniti modi perferendis inventore. Totam, consequatur velit!
-        Perspiciatis repellendus quod voluptas veritatis pariatur voluptatem,
-        officia velit cupiditate odio reprehenderit aliquid, blanditiis aperiam
-        in obcaecati illo perferendis, sed quam eos tenetur assumenda! Facere,
-        quos cupiditate? Reprehenderit, sint necessitatibus. Eos quisquam
-        pariatur voluptatum quis, aut blanditiis deleniti expedita at sunt
-        delectus id dignissimos magni repudiandae hic officiis sequi aliquam
-        ipsam consectetur! Asperiores tempora impedit quo ullam! Recusandae,
-        labore aperiam quis, similique possimus tempore, consequuntur voluptas
-        dolorum provident autem odit laudantium cupiditate odio nihil
-        voluptatem. Nostrum sit tempora consequatur sint numquam dolore illo
-        sapiente excepturi doloribus optio. Doloremque voluptatibus aliquam
-        consequatur illo quibusdam voluptatem vitae magni praesentium quam,
-        totam qui, nulla eos rem labore facilis aperiam commodi repellendus
-        ipsa, ut saepe modi quia cupiditate reprehenderit beatae. Quia?
-        Accusamus culpa est, accusantium doloremque placeat ullam quaerat? Nemo
-        recusandae facere enim numquam ut quidem fugiat modi rerum distinctio
-        magni ipsam, culpa dolor architecto quibusdam voluptatibus sint
-        exercitationem at alias? Illum repellendus alias nostrum quaerat at
-        commodi corporis odit, dolores harum et eaque! Vero asperiores
-        praesentium esse. Porro minus quibusdam animi esse dolore delectus, sit
-        quo perspiciatis! Placeat, eveniet praesentium! Vero in iste magnam
-        maiores, quos recusandae perferendis vitae corporis! Cum dolores, amet
-        nobis commodi mollitia consectetur animi voluptatem explicabo rerum
-        suscipit assumenda accusamus natus, est quas, dignissimos in unde!
-        Veritatis exercitationem delectus quaerat animi? Assumenda hic enim
-        ducimus rerum vero aut magni, a voluptatibus doloremque recusandae
-        doloribus maxime corrupti saepe voluptatum earum consectetur iste
-        suscipit fugiat neque similique ut. Non blanditiis rerum facilis sit
-        amet voluptas commodi quis, ipsa minus necessitatibus velit sapiente
-        debitis et aliquam architecto mollitia quae perferendis veritatis
-        consectetur magnam unde dolorum corrupti quasi. Consectetur, obcaecati?
-        Perspiciatis, aut. Maiores laudantium aperiam labore totam ex natus,
-        quaerat blanditiis, veritatis cum esse tenetur sapiente sint asperiores
-        provident odio quam quod harum id eius perspiciatis explicabo! Neque,
-        facere fugiat! Natus officiis excepturi et quis odio maxime quia tenetur
-        praesentium nulla veniam autem quaerat voluptatum modi corporis quidem
-        harum, deleniti ea, tempora fuga quod! Aspernatur ducimus molestias
-        explicabo rem omnis. Eos voluptatibus, aperiam facere officiis eum
-        incidunt deserunt placeat accusamus eaque praesentium esse numquam, sint
-        perferendis! Earum similique consectetur dolorem reprehenderit minima,
-        ullam, ad odio rem fugit nemo mollitia deserunt. Tenetur adipisci,
-        magnam incidunt, iste qui deleniti minus fuga repellendus et, ratione
-        quidem nesciunt eaque deserunt. Delectus vero, molestiae impedit optio
-        suscipit ratione nulla amet dolore, hic, error magnam veritatis? Nam
-        cumque voluptas ut debitis repellendus rem cum dolores! Quibusdam
-        repudiandae aliquam sed aspernatur iste minima asperiores, enim
-        obcaecati omnis magnam facilis laborum. Autem eveniet quos unde officia
-        voluptate numquam! Consequuntur veniam esse nihil, quae exercitationem
-        odio ipsa earum fugit illum? Libero, error. Nostrum in voluptatem nemo
-        earum eaque, quaerat repellat facere fugiat aut possimus quam officiis
-        esse reiciendis voluptas. Quia deleniti beatae explicabo iusto nulla
-        consectetur minus esse deserunt perspiciatis error? Perspiciatis ad
-        excepturi distinctio beatae pariatur voluptate, illum assumenda itaque
-        suscipit tenetur fugit qui eius voluptas eos debitis? Molestiae animi
-        illo exercitationem, cupiditate maiores natus eligendi soluta,
-        praesentium sunt magnam consequatur eos facilis error nesciunt velit
-        iusto aut! Fugiat officia adipisci tempore? Eaque totam possimus modi
-        quae est.
-      </p>
+      <div className="max-w-4xl mx-auto px-4 py-12 text-center text-[#222]">
+        <h1 className="text-3xl font-bold mb-2">Discover the World</h1>
+        <p className="text-lg leading-relaxed">
+          Justiway Travel & Tours is a trusted travel solutions provider based
+          in Nigeria. Our mission is to open up the world to our clients,
+          offering seamless visa processing, curated tour experiences, hotel
+          bookings, travel insurance, and academic admissions support to top
+          institutions across the UK and other study destinations. Whether you
+          are planning a family vacation, seeking a student visa, or applying
+          for your Nigerian passport, our experienced team ensures you get
+          expert advice, fast service, and peace of mind.
+        </p>
+      </div>
     </>
   );
 }
