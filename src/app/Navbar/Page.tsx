@@ -1,15 +1,14 @@
-'use client'
-import React, { useEffect } from 'react'
+"use client";
+import React, { useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const pathname = usePathname();
-
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -32,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white shadow-sm transition-transform duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -150,6 +149,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
