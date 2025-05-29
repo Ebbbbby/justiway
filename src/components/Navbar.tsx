@@ -14,7 +14,7 @@ const Navbar = () => {
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/about", label: "About Us" },
-    { href: "/tour", label: "Tour Packages" },
+    { href: "/tours", label: "Tour Packages" },
     { href: "/visa", label: "Visa & Immigration" },
     { href: "/study", label: "Study Abroad" },
     { href: "/contact", label: "Contact Us" },
@@ -37,12 +37,14 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <span className="ml-2 text-xl font-bold text-gray-800">
+                <Link href="/">
                 <Image
                   src="/images/justiway2.png"
                   alt="Logo"
                   width={100}
                   height={100}
                 />
+                </Link>
               </span>
             </div>
           </div>
