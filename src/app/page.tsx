@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Card from "@/cards/Card";
+import Footer from "@/components/Footer";
 
 const slides = [
   {
@@ -143,6 +144,9 @@ export default function Home () {
         </p>
       </div>
       <Card />
+      <div>
+        <Footer />
+      </div>
     </>
   )
 }

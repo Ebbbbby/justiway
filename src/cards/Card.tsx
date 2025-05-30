@@ -1,7 +1,8 @@
 import ChoiceCard from "@/components/ChoiceCard";
 import { BiSupport } from "react-icons/bi";
-import { FaHandshake, FaHotel } from "react-icons/fa";
+import { FaHandshake, FaHotel, FaPassport } from "react-icons/fa";
 import { LuNotebookPen } from "react-icons/lu";
+import { MdFlight } from "react-icons/md";
 import { RiCompassDiscoverLine, RiVisaLine } from "react-icons/ri";
 
 export default function Card(){
@@ -19,7 +20,7 @@ export default function Card(){
         />
         <ChoiceCard
           title="Seamless Planning"
-          description="We ensure every travel detail is perfectly planned for stress-free experiences."
+          description="We ensure every travel detail is perfectly planned for stress free experiences."
           icon={<LuNotebookPen />}
         />
         <ChoiceCard
@@ -48,6 +49,16 @@ export default function Card(){
           description="We help book quality hotels for your comfort in any travel destination"
           icon={<FaHotel />}
           className="bg-emerald-50 border-emerald-100"
+        />
+        <ChoiceCard
+          title="Flight Bookings"
+          description="We handle your flight reservations swiftly. Affordable, convenient, and perfectly timed trips"
+          icon={<MdFlight />}
+        />
+        <ChoiceCard
+          title="Nigerian Passport Application"
+          description="We assist with passport applications, making the process faster and stress free"
+          icon={<FaPassport />}
         />
       </div>
     </div>
