@@ -1,11 +1,12 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Card from "@/cards/Card";
-import Footer from "@/components/Footer";
+import ContinentPage from "./continents/page";
+
+
 
 const slides = [
   {
@@ -19,7 +20,6 @@ const slides = [
     text: "Whether you're looking to explore a new destination or apply for a visa, we're here to simplify the process.",
     button: "Get Visa Help",
     image: "/images/visa1.jpg",
-
   },
   {
     title: "Study Abroad With Ease",
@@ -47,7 +47,18 @@ const slideVariants = {
   },
 };
 
-export default function Home () {
+const containerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
@@ -130,23 +141,35 @@ export default function Home () {
           ))}
         </div>
       </div>
-      <div className="max-w-4xl mx-auto px-4 py-12 text-center text-[#222]">
-        <h1 className="text-3xl font-bold mb-2">Discover the World</h1>
-        <p className="text-lg leading-relaxed">
-          Justiway Travel & Tours is a trusted travel solutions provider based
-          in Nigeria. Our mission is to open up the world to our clients,
-          offering seamless visa processing, curated tour experiences, hotel
-          bookings, travel insurance, and academic admissions support to top
-          institutions across the UK and other study destinations. Whether you
-          are planning a family vacation, seeking a student visa, or applying
-          for your Nigerian passport, our experienced team ensures you get
-          expert advice, fast service, and peace of mind.
-        </p>
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 py-14 text-center text-[#222]">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={containerVariants}
+          >
+            <h1 className="text-3xl font-bold mb-2">Discover the World</h1>
+            <p className="text-lg leading-relaxed">
+              Justiway Travel & Tours is a trusted travel solutions provider
+              based in Nigeria. Our mission is to open up the world to our
+              clients, offering seamless visa processing, curated tour
+              experiences, hotel bookings, travel insurance, and academic
+              admissions support to top institutions across the UK and other
+              study destinations. Whether you are planning a family vacation,
+              seeking a student visa, or applying for your Nigerian passport,
+              our experienced team ensures you get expert advice, fast service,
+              and peace of mind.
+            </p>
+          </motion.div>
+        </div>
       </div>
+
       <Card />
       <div>
-        <Footer />
+        <ContinentPage/>
       </div>
+
     </>
-  )
+  );
 }

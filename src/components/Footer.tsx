@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BsInstagram, BsSendFill } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -95,6 +96,15 @@ export default function Footer() {
           </h3>
           <p className="mb-7 text-gray-400 text-[14px]">
             justiwaytours@gmail.com
+          </p>
+          <h3 className="text-lg font-medium text-[#fff]">
+            <span className="inline-flex items-center justify-center gap-x-2">
+              <FaLocationDot className="text-[#FFdf01] mr-2 " />
+            </span>
+            Address
+          </h3>
+          <p className="mb-7 text-gray-400 text-[14px]">
+            Chief Shittu Saka Musa Street, Ilaje , Lagos State
           </p>
         </div>
 
