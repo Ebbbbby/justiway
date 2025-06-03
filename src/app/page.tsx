@@ -149,7 +149,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             variants={containerVariants}
           >
-            <h1 className="text-3xl font-bold mb-2">Discover the World</h1>
+            <h1 className="text-3xl font-bold mb-2 underline">Discover the World</h1>
             <p className="text-lg leading-relaxed">
               Justiway Travel & Tours is a trusted travel solutions provider
               based in Nigeria. Our mission is to open up the world to our

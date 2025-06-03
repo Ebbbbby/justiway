@@ -32,16 +32,18 @@ export default function Card() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto py-14 mt-6  px-4 sm:px-6 lg:px-8 text-[#222]">
+    <div className="max-w-7xl mx-auto py-14 mt-6 px-4 sm:px-6 lg:px-8 text-[#222]">
       <motion.h1
-        className="text-3xl font-bold mb-4 text-[#222] text-center"
+        className="text-3xl font-bold mb-4 text-[#222] text-center underline"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.6 }}
       >
         Why Travel With Justiway
+        
       </motion.h1>
+
 
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
