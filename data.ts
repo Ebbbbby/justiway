@@ -79,7 +79,7 @@ export const continents = [
         name: "Thailand",
         image: "/images/continents/thailand.jpg",
         description:
-          "From Bangkok’s bustle to Phi Phi’s beaches—Thailand has it all.",
+          "From Bangkok’s bustle to Phi Phi’s beaches. Thailand has it all.",
       },
       {
         name: "Dubai",

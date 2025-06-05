@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Card from "@/cards/Card";
 import ContinentPage from "./continents/page";
+import Testimonial from "@/testimonial/Testimonial";
 
 
 
@@ -168,6 +169,10 @@ export default function Home() {
       <Card />
       <div>
         <ContinentPage/>
+      </div>
+
+      <div>
+        <Testimonial />
       </div>
 
     </>
