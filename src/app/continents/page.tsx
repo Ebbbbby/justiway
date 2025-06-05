@@ -17,9 +17,10 @@ const ContinentPage = () => {
       },
     },
   };
+  const slugify = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
   return (
     <div className=" w-fullw-full bg-gradient-to-br from-blue-50 to-blue-100">
-      <div className="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8 ">
+      <div className="max-w-7xl mx-auto px-4 py-10 ">
         <div className="max-w-5xl mx-auto px-4 py-5 text-center text-[#222]">
           <motion.div
             initial="hidden"
@@ -27,7 +28,9 @@ const ContinentPage = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={containerVariants}
           >
-            <h1 className="text-3xl font-bold mb-2 underline">Our Destinations</h1>
+            <h1 className="text-3xl font-bold mb-2 underline">
+              Our Destinations
+            </h1>
             <p className="text-lg leading-relaxed ">
               Explore the world&apos;s continents with us. Each destination
               offers a unique blend of culture, adventure, and natural beauty.
@@ -36,15 +39,18 @@ const ContinentPage = () => {
             </p>
           </motion.div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {continents.map((continent, index) => (
             <motion.div
               key={continent.name}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              // onClick={() =>
+              //   router.push(`/continents/${continent.name.toLowerCase()}`)
+              // }
               onClick={() =>
-                router.push(`/continents/${continent.name.toLowerCase()}`)
+                router.push(`/continents/${slugify(continent.name)}`)
               }
               className="relative group cursor-pointer rounded-lg overflow-hidden shadow-md min-h-[250px] md:min-h-[300px] hover:shadow-xl transition-shadow duration-300"
             >

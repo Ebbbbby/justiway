@@ -25,9 +25,11 @@ export default async function SingleContinentPage({ params }: Props) {
       <h1 className="text-3xl font-bold text-center mb-6 mt-6">
         {selected.name}
       </h1>
-      <p className="text-center text-gray-600 mb-10">{selected.description}</p>
+      <p className="text-center px-6 text-gray-600 mb-10">
+        {selected.description}
+      </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4  px-6  sm:px-6 lg:px-8">
         {selected.locations.map((loc) => (
           <div
             key={loc.name}
