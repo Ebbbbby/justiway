@@ -11,7 +11,7 @@ const testimonials = [
     image: "/images/profile1.jpg",
   },
   {
-    name: "John Duru.",
+    name: "John Sule.",
     text: "The customer service is top-notch. They helped me navigate my study application to Canada!",
     location: "Abuja, Nigeria",
     image: "/images/profile2.jpg",

@@ -17,6 +17,15 @@ const ContinentPage = () => {
       },
     },
   };
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.6 },
+    }),
+  };
+
   const slugify = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
   return (
     <div className=" w-fullw-full bg-gradient-to-br from-blue-50 to-blue-100">
@@ -46,9 +55,9 @@ const ContinentPage = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              // onClick={() =>
-              //   router.push(`/continents/${continent.name.toLowerCase()}`)
-              // }
+              variants={fadeUp}
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
               onClick={() =>
                 router.push(`/continents/${slugify(continent.name)}`)
               }
