@@ -1,5 +1,6 @@
 "use client";
 
+import OurActivities from "@/ouractivities/OurActivities";
 import OurStory from "@/ourstory/OurStory";
 import OurVision from "@/ourvision/OurVision";
 import { motion } from "framer-motion";
@@ -43,6 +44,9 @@ export default function AboutPage() {
       </div>
       <div>
         <OurVision />
+      </div>
+      <div>
+        <OurActivities />
       </div>
     </div>
   );

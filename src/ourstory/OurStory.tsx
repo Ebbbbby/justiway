@@ -38,9 +38,7 @@ const containerVariants = {
           variants={containerVariants}
         >
           <h2 className="text-2xl font-bold underline mb-4">Who We Are</h2>
-          {/* <h1 className=" text-[#FFdf01] uppercase font-bold text-2xl mb-2 mt-2 ">
-            Justiway Travel and Tours
-          </h1> */}
+        
           <p className="mb-4 text-lg leading-relaxed ">
             We are a team of passionate individuals dedicated to providing the
             best services in our field. Our mission is to deliver quality and
