@@ -129,6 +129,7 @@ const Navbar = () => {
                   <Link
                     key={link.href}
                     href={link.href}
+                    onClick={() => setIsOpen(!isOpen)}
                     className={`text-[16px] font-bold transition-all duration-300 py-3 ${
                       isActive
                         ? "text-[#2137fc]"

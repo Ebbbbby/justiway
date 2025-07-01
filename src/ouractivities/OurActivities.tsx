@@ -71,7 +71,7 @@ export default function OurActivities() {
 
         <motion.div
           className="p-4 shadow rounded-md"
-       initial="hidden"
+          initial="hidden"
           variants={container}
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -80,6 +80,11 @@ export default function OurActivities() {
             {selected.name}
           </h2>
           <p className="text-lg leading-relaxed">{selected.description}</p>
+          <div className="mt-6 flex items-center justify-center">
+            <button className="bg-gradient-to-r from-[#2137fc] to-[#50e3c2] text-white px-4 py-2 rounded-md hover:from-[#1a2bc7] hover:to-[#3dbfa2] transition-all duration-300">
+              Book Now
+            </button>
+          </div>
         </motion.div>
 
         <motion.div
