@@ -1,6 +1,8 @@
+import ServicesCard from "@/components/ServicesCard";
 import Image from "next/image";
 import Link from "next/link";
-export default function ServicesPage() {
+
+const ServicesPage = () =>{
   return (
     <div className="">
       <div className="relative text-white">
@@ -83,20 +85,60 @@ export default function ServicesPage() {
               </div>
             </div>
           </Link>
-
         </div>
       </div>
-      <div className="bg-white py-14">
-        <div className="max-w-5xl mx-auto px-4 text-center text-[#222]">
-          <h2 className="text-2xl font-bold mb-4">Flight Ticketing</h2>
-          <p className="text-lg leading-relaxed mb-8">
-            With years of experience in the travel industry, we pride ourselves
-            on delivering exceptional service and creating memorable experiences
-            for our clients. Our team of experts is committed to providing
-            personalized solutions that cater to your unique travel needs.
-          </p>
+      {/* <div className=" py-8">
+        <div className="max-w-7xl mx-auto px-4 text-center text-[#222]">
+          <div className="flex w-full gap-x-4 items-center justify-center mb-6">
+            <div className="flex bg-white p-4 rounded-lg w-[50%] ">
+              <div className="w-full">
+                <Image
+                  src="/images/plane.jpg"
+                  alt="Flight Ticketing"
+                  width={1500}
+                  height={1500}
+                  className="w-full h-50 object-cover mb-6 rounded-lg shadow-md"
+                />
+              </div>
+              <div className="w-full">
+                <h2 className="text-2xl font-bold mb-4">Flight Ticketing</h2>
+                <p className="text-sm leading-relaxed w-full  ml-2">
+                  With years of experience in the travel industry, we pride
+                  ourselves on delivering exceptional service and creating
+                  memorable experiences for our clients. Our team of experts is
+                  committed to providing personalized solutions that cater to
+                  your unique travel needs.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex bg-white p-4 rounded-lg w-[50%]">
+              <div className="w-full">
+                <Image
+                  src="/images/reserve.jpg"
+                  alt="Flight Ticketing"
+                  width={1500}
+                  height={1500}
+                  className="w-full h-50 object-cover mb-6 rounded-lg shadow-md"
+                />
+              </div>
+              <div className="w-full">
+                <h2 className="text-2xl font-bold mb-4">Hotel Booking</h2>
+                <p className="text-sm leading-relaxed w-full ml-2">
+                  We understand that every traveler has unique preferences and
+                  requirements. Whether you are traveling for business or
+                  leisure, we offer a wide range of hotel options to suit your
+                  needs, from budget-friendly accommodations to luxury stays.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+      </div> */}
+      <ServicesCard/>
+
     </div>
   );
 }
+
+export default ServicesPage;

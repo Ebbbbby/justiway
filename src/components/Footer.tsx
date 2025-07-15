@@ -94,8 +94,11 @@ export default function Footer() {
             </span>
             Send Us a Message
           </h3>
+          <p className=" text-gray-400 text-[14px]">
+            enquiries@justiwaytravelandtours.com
+          </p>
           <p className="mb-7 text-gray-400 text-[14px]">
-            justiwaytours@gmail.com
+            contact@justiwaytravelandtours.com
           </p>
           <h3 className="text-lg font-medium text-[#fff]">
             <span className="inline-flex items-center justify-center gap-x-2">

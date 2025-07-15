@@ -7,20 +7,26 @@ const Header = () => {
   return (
     <header className="bg-[#222] hidden md:block">
       <div className="py-2 container flex items-center justify-between mx-auto">
-        <div className="flex items-center">
+        <div className="flex items-center justify-center ">
           <span>
             <BsSendFill className="text-2xl text-[#FFdf01]" />
           </span>
-          <div className="leading-4 ml-2">
-            <p className="text-sm">Email:</p>
-            <p className="text-[#FFdf01]">justiwaytours@gmail.com</p>
+          <div className="leading-4 ml-1 ">
+            <p className="text-lg">Email:</p>
+          </div>
+          <div className="text-sm ml-2 cursor-pointer">
+            <p className="text-[#FFdf01]">
+              enquiries@justiwaytravelandtours.com
+            </p>
+            <p className="text-[#FFdf01]">contact@justiwaytravelandtours.com</p>
           </div>
         </div>
+
         <div className="divide divide-gray-400" />
 
         <div className="flex items-center">
           <p className="mr-1 text-sm">Hurry Up For your new Tour! </p>{" "}
-          <Link href="/tour" className="underline text-[#FFdf01]">
+          <Link href="/contact" className="underline text-[#FFdf01]">
             Book your tour
           </Link>
         </div>
