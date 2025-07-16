@@ -16,7 +16,7 @@ const ServicesPage = () =>{
             priority
           />
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center">
-            <h1 className="text-3xl font-bold mb-2">About Us</h1>
+            <h1 className="text-3xl font-bold mb-2">Our Services</h1>
             <p className="text-sm text-gray-200">
               <Link
                 href="/"

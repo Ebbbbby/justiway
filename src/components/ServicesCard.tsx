@@ -82,12 +82,12 @@ export default function ServicesCard() {
               </div>
               <div className="w-full">
                 <h2 className="text-2xl font-bold mb-4">Airport Transfers</h2>
-                <p className="text-sm leading-relaxed w-full ml-2">
-                  With years of experience in the travel industry, we pride
-                  ourselves on delivering exceptional service and creating
-                  memorable experiences for our clients. Our team of experts is
-                  committed to providing personalized solutions that cater to
-                  your unique travel needs.
+                <p className="text-sm leading-relaxed w-full">
+                  Smooth and timely pick-up and drop-off services for your
+                  convenience. We understand the importance of seamless airport
+                  transfers, which is why we offer reliable and efficient
+                  transportation services to ensure you reach your destination
+                  comfortably and on time.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function ServicesCard() {
             <div className="bg-white p-4 rounded-lg w-full  mb-6 lg:mb-0">
               <div className="w-full">
                 <Image
-                  src="/images/reserve.jpg"
+                  src="/images/consult.jpg"
                   alt="Hotel Booking"
                   width={1500}
                   height={1500}
@@ -104,18 +104,19 @@ export default function ServicesCard() {
               </div>
               <div className="w-full">
                 <h2 className="text-2xl font-bold mb-4">Travel Consultation</h2>
-                <p className="text-sm leading-relaxed w-full ml-2">
-                  We understand that every traveler has unique preferences and
-                  requirements. Whether you are traveling for business or
-                  leisure, we offer a wide range of hotel options to suit your
-                  needs, from budget-friendly accommodations to luxury stays.
+                <p className="text-sm leading-relaxed w-full">
+                  Professional travel advice to help you plan the perfect
+                  journey. Our travel consultants are here to assist you in
+                  making informed decisions about your travel plans, ensuring
+                  that you have a smooth and enjoyable experience from start to
+                  finish.
                 </p>
               </div>
             </div>
             <div className="bg-white p-4 rounded-lg w-full  mb-6 lg:mb-0">
               <div className="w-full">
                 <Image
-                  src="/images/reserve.jpg"
+                  src="/images/manage.jpg"
                   alt="Hotel Booking"
                   width={1500}
                   height={1500}
@@ -126,14 +127,21 @@ export default function ServicesCard() {
                 <h2 className="text-2xl font-bold mb-4">
                   Corporate Travel Management
                 </h2>
-                <p className="text-sm leading-relaxed w-full ml-2">
-                  We understand that every traveler has unique preferences and
-                  requirements. Whether you are traveling for business or
-                  leisure, we offer a wide range of hotel options to suit your
-                  needs, from budget-friendly accommodations to luxury stays.
+                <p className="text-sm leading-relaxed w-full">
+                  Customized travel solutions for businesses and corporate
+                  clients. Whether you are planning a vacation, business trip,
+                  or pursuing your dreams abroad, Justiway Travel & Tours is
+                  here to guide you every step of the way.
                 </p>
               </div>
             </div>
+          </div>
+
+          <div>
+            {" "}
+            <button className="bg-gradient-to-r from-[#2137fc] to-[#50e3c2] text-white px-4 py-2 rounded-md hover:from-[#1a2bc7] hover:to-[#3dbfa2] transition-all duration-300">
+              Book Now
+            </button>
           </div>
         </div>
       </div>
