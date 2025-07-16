@@ -3,6 +3,7 @@ import Image from "next/image";
 export default function ServicesCard() {
   return (
     <>
+
       <div className="py-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-[#222]">
           <div className="flex w-full gap-x-4 items-center justify-center mb-6 flex-col lg:flex-row">
@@ -73,7 +74,7 @@ export default function ServicesCard() {
             <div className=" bg-white p-4 rounded-lg w-full mb-6 lg:mb-0">
               <div className="w-full">
                 <Image
-                  src="/images/plane.jpg"
+                  src="/images/transfers.jpg"
                   alt="Flight Ticketing"
                   width={1500}
                   height={1500}
