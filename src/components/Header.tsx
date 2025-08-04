@@ -15,10 +15,10 @@ const Header = () => {
             <p className="text-lg">Email:</p>
           </div>
           <div className="text-sm ml-2 cursor-pointer">
-            <p className="text-[#FFdf01]">
+            <p className="text-gray-300">
               enquiries@justiwaytravelandtours.com
             </p>
-            <p className="text-[#FFdf01]">contact@justiwaytravelandtours.com</p>
+            <p className="text-gray-300">contact@justiwaytravelandtours.com</p>
           </div>
         </div>
 
