@@ -4,38 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 export default function ToursPage () {
   return (
-    // <motion.div className="">
-    //   <div className="h-auto">
-    //     <Image
-    //       src="/images/toursimg2.jpg"
-    //       alt="About Us"
-    //       width={1500}
-    //       height={100}
-    //       className="w-full h-[80vh] object-cover"
-    //       priority
-    //     />
-    //     <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center">
-    //       <h1 className="text-3xl font-bold mb-2">Tour Packages</h1>
-    //       <p className="text-sm text-gray-200">
-    //         <Link href="/" className="font-bold hover:underline text-gray-300 ">
-    //           Home
-    //         </Link>
-    //         <span className="mx-2 font-bold">{">"}</span>
-    //         <span className="text-[#2137fc] font-bold">Tours</span>
-    //       </p>
-    //       <p>
-    //         At Justiway Travel & Tours, we create unforgettable travel
-    //         experiences designed just for you. Whether you’re looking to unwind
-    //         on a tropical beach, explore historic cities, or enjoy a romantic
-    //         getaway, we tailor our tour packages to suit your budget, interests,
-    //         and schedule
-    //       </p>
-    //     </div>
-    //   </div>
-    // </motion.div>
+ 
     <motion.div className="relative">
       <div className="h-auto relative">
-        {/* Background image */}
         <Image
           src="/images/toursimg.jpg"
           alt="About Us"
@@ -45,10 +16,8 @@ export default function ToursPage () {
           priority
         />
 
-        {/* Dark overlay over image */}
         <div className="absolute inset-0 bg-black/50" />
 
-        {/* Centered heading and breadcrumb */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-3xl font-bold mb-2">Tour Packages</h1>
           <p className="text-sm text-gray-200">
@@ -60,7 +29,6 @@ export default function ToursPage () {
           </p>
         </div>
 
-        {/* Left-aligned animated paragraph */}
 
 
         {typeof window !== "undefined" && (
