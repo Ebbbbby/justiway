@@ -32,7 +32,6 @@ export default function ToursPage () {
               <span className="text-[#2137fc] font-bold">Tours</span>
             </p>
           </div>
-
           {typeof window !== "undefined" && (
             <motion.div
               initial={{ x: -100, opacity: 0 }}
