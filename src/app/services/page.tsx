@@ -131,7 +131,7 @@ const ServicesPage = () => {
       </div>
 
       <div className="py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center text-[#222] overflow-hidden bord">
+        <div className="max-w-7xl mx-auto px-4 text-center text-[#222] overflow-hidden">
           <div className="flex w-full gap-x-4 items-center justify-center mb-6 flex-col lg:flex-row ">
             <motion.div
               initial={{ x: -80, opacity: 0 }}
